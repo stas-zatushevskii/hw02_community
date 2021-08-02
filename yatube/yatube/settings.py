@@ -60,7 +60,7 @@ TEMPLATES = [
 
         # Оставляем True: шаблоны встроенных приложений (например, админки)
         # нужно искать в директориях приложений
-        'APP_DIRS': True, 
+        'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
                 'django.template.context_processors.debug',
@@ -124,4 +124,4 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')] 
+STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
