@@ -1,7 +1,6 @@
 <!-- templates/posts/group_list.html -->
 {% extends 'base.html' %}
 
-
 {% block content %}
   <h1>{{ group.title }}</h1>
   <p>{{ group.description }}</p>
@@ -15,6 +14,5 @@
       </li>
     </ul>
     <p>{{ post.text }}</p>
-    {% if not forloop.last %}<hr>{% endif %}
   {% endfor %}
 {% endblock %}
