@@ -16,7 +16,7 @@ class Group(models.Model):
     class Meta:
         ordering = ['-pub_date']
         default_related_name = 'posts'
-        verbose_title = 'название группы'
+
 
 
 class Post(models.Model):
