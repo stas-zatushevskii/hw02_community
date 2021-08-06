@@ -5,7 +5,8 @@ from .models import Post, Group
 def group_posts(request, slug):
     template = 'posts/group_list.html'
     group = get_object_or_404(Group, slug=slug)
-    posts = Post.objects.filter(group=group).order_by('-pub_date')[:10]
+    posts = group.posts.all()
+#    posts = Post.objects.filter(group=group).order_by('-pub_date')[:10]
 
     context = {
         'group': group,
@@ -22,3 +23,5 @@ def index(request):
         'posts': posts
     }
     return render(request, template, context)
+    class Meta:
+
