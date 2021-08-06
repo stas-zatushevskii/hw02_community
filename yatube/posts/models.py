@@ -18,7 +18,6 @@ class Group(models.Model):
         default_related_name = 'posts'
 
 
-
 class Post(models.Model):
     text = models.TextField()
     pub_date = models.DateTimeField(auto_now_add=True)
