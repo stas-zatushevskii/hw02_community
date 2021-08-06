@@ -23,5 +23,3 @@ def index(request):
         'posts': posts
     }
     return render(request, template, context)
-    class Meta:
-
