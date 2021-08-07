@@ -15,7 +15,7 @@ def group_posts(request, slug):
 
 def index(request):
     template = 'posts/index.html'
-    posts = Post.objects
+    posts = Post.group.posts.all()
 
     context = {
         'posts': posts
