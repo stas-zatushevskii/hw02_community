@@ -15,7 +15,7 @@ def group_posts(request, slug):
 
 def index(request):
     template = 'posts/index.html'
-    posts = Post.objects[:10]
+    posts = Post.objects.order_by('-pub_date')[:10]
 
     context = {
         'posts': posts
